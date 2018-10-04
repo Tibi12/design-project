@@ -11,7 +11,6 @@ X, y = make_classification(n_samples=5000, n_features=2, n_informative=2,
                            weights=[0.01, 0.05, 0.94],
                            class_sep=0.8, random_state=0)
 
-
 bc = BalanceCascade(random_state=0,
                     estimator=LogisticRegression(random_state=0),
                     n_max_subset=10)
